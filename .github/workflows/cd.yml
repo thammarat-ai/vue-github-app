@@ -31,13 +31,13 @@ jobs:
     needs: build-production-job
     runs-on: ubuntu-latest
     steps:
-      - name: Download dist folder artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: dist-production
-          path: dist
+      #   - name: Download dist folder artifacts
+      #     uses: actions/download-artifact@v3
+      #     with:
+      #       name: dist-production
+      #       path: dist
 
-      - run: ls dist
+      #   - run: ls dist
 
       - uses: actions/checkout@v4
       - name: publish vue to github pages
