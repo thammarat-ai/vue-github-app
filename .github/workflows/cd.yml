@@ -36,5 +36,4 @@ jobs:
         with:
           name: dist-production
           path: dist
-     - run: ls dist
-     
+      - run: ls dist
